@@ -1,0 +1,50 @@
+:root {
+    --main-color: #D1884F;
+    --secondary-color: #008AAA;
+    --tertiary-color: #3BBADB;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    /* Aligns the navigation to the right */
+    display: flex;
+    justify-content: right;
+    padding: 3%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px; /* Adjust the left margin to space out the nav items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black; /* Default text color */
+    display: flex;
+    align-items: center; /* Aligns the icon and text vertically */
+}
+
+nav ul li a .fas {
+    margin-right: 10px; /* Spacing between icon and text */
+}
+
+nav ul li a.active {
+    color: var(--main-color); /* Icon color for the active page */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px; /* Smaller padding for smaller devices */
+    }
+}
+
