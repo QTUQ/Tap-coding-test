@@ -48,3 +48,62 @@ nav ul li a.active {
     }
 }
 
+#info {
+    text-align: left; 
+    padding: 50px; 
+    background-color: #fff; 
+}
+
+#info h2 {
+    color: var(--tertiary-color); 
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem; 
+}
+
+.highlight-dev {
+    color: var(--main-color); 
+}
+
+
+#info h1 {
+    color: var(--secondary-color); 
+    font-size: 3rem; 
+    margin-bottom: 1rem; /* Space between the title and the paragraph */
+}
+
+#info p {
+    color: #333; 
+    font-size: 1.2rem; 
+}
+
+#info p a {
+    text-decoration: none; 
+    color: var(--tertiary-color); 
+}
+
+#info .info-buttons {
+    margin-top: 2rem; /* Space between the paragraph and buttons */
+}
+
+#info .button {
+    background-color: #fff; 
+    color: var(--secondary-color); 
+    border: 2px solid var(--secondary-color); 
+    font-size: 1rem; 
+    padding: 5px 30px; 
+    text-decoration: none; 
+    display: inline-block; /* Align buttons next to each other */
+    margin-right: 10px; /* Space between buttons */
+    border-radius: 5px; 
+}
+
+#info .button:first-of-type {
+    background-color: var(--secondary-color); 
+    color: #fff; 
+    box-shadow: 0px 4px 8px rgba(76, 146, 173, 0.8); 
+}
+
+
+
+
+
