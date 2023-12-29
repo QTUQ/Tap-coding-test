@@ -77,8 +77,9 @@ nav ul li a.active {
     color: var(--tertiary-color); 
 }
 
-#info .info-buttons {
+#info .button-container {
     margin-top: 2rem; /* Space between the paragraph and buttons */
+    width: 100%;
 }
 
 #info .button {
@@ -88,9 +89,8 @@ nav ul li a.active {
     font-size: 1rem; 
     padding: 5px 30px; 
     text-decoration: none; 
-    display: inline-block; /* Align buttons next to each other */
-    margin-right: 10px; /* Space between buttons */
-    border-radius: 5px; 
+    display: inline-block;
+    border-radius: 5px;
 }
 
 #info .button:first-of-type {
@@ -162,18 +162,6 @@ nav ul li a.active {
 
     .content {
         width: 100%; 
-    }
-
-    .button {
-        padding: 10px 20px; 
-        font-size: 0.9rem; 
-        width: 40%; 
-    }
-
-    #info .button:first-of-type {
-        padding: 5px 20px; 
-        font-size: 0.9rem; 
-        width: 20%; 
     }
 }
 
