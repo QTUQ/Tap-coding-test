@@ -1,4 +1,5 @@
 :root {
+    --white-color: #fff;
     --main-color: #D1884F;
     --secondary-color: #008AAA;
     --tertiary-color: #3BBADB;
@@ -41,17 +42,12 @@ nav ul li a.active {
     color: var(--main-color); /* Icon color for the active page */
 }
 
-/* Responsive design adjustments */
-@media (max-width: 768px) {
-    header {
-        padding: 10px 20px; /* Smaller padding for smaller devices */
-    }
-}
-
 #info {
-    text-align: left; 
-    padding: 50px; 
-    background-color: #fff; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 20px; 
+    background-color: var(--white-color);
 }
 
 #info h2 {
@@ -86,7 +82,7 @@ nav ul li a.active {
 }
 
 #info .button {
-    background-color: #fff; 
+    background-color: var(--white-color);; 
     color: var(--secondary-color); 
     border: 2px solid var(--secondary-color); 
     font-size: 1rem; 
@@ -99,11 +95,86 @@ nav ul li a.active {
 
 #info .button:first-of-type {
     background-color: var(--secondary-color); 
-    color: #fff; 
+    color: var(--white-color);; 
     box-shadow: 0px 4px 8px rgba(76, 146, 173, 0.8); 
 }
 
+.content {
+    flex: 1; 
+    padding-left: 50px;
+}
 
+.profile-container {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.profile-pic {
+    max-width: 100%; 
+    height: auto;
+}
+
+/* Medium screens (tablets, small laptops) */
+@media (max-width: 1024px) {
+    .content, .profile-container {
+        padding-right: 30px; 
+    }
+    
+    #info h1 {
+        font-size: 2.5rem; 
+    }
+
+    #info p {
+        font-size: 1rem; 
+    }
+
+    .profile-pic {
+        width: 50%; 
+    }
+}
+
+/* Small screens (phones in portrait) */
+@media (max-width: 768px) {
+
+    nav ul li a {
+        font-size: 0.7rem; 
+    }
+
+    #info {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center; 
+    }
+
+    .profile-container {
+        order: -1; 
+        width: 100%; 
+        justify-content: center; 
+        margin-bottom: 20px; 
+    }
+
+    .profile-image {
+        width: 50%; 
+        margin-bottom: 20px; 
+    }
+
+    .content {
+        width: 100%; 
+    }
+
+    .button {
+        padding: 10px 20px; 
+        font-size: 0.9rem; 
+        width: 40%; 
+    }
+
+    #info .button:first-of-type {
+        padding: 5px 20px; 
+        font-size: 0.9rem; 
+        width: 20%; 
+    }
+}
 
 
